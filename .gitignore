@@ -1,0 +1,34 @@
+
+# Frontend specific
+frontend/node_modules/
+
+# Backend specific
+backend/.settings/
+backend/.classpath
+backend/.project
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Docker related
+docker-compose.override.yml
+*.dockerignore
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.backend.mapper.ModelMapper">
+    <insert id="addModel">
+        insert into user_quotas(user_id, model_id, total_quota, used_quota, api_key) VALUES (#{userId},#{modelId},#{total},#{used},#{apiKey})
+    </insert>
+
+
+    <select id="getModelInfo" resultType="com.demo.backend.pojo.Model">
+        select model_name,provider
+        from ai_models;
+    </select>
+    <select id="getApiKey" resultType="java.lang.String">
+        select api_key from user_quotas where #{userId}=user_id and #{modelId} = model_id
+    </select>
+    <select id="getModelName" resultType="java.lang.String">
+        select  model_name from ai_models where #{modelId}=id;
+    </select>
+    <select id="getModelIdByModelNameAndProvider" resultType="java.lang.String">
+        select id from ai_models where #{modelName}=model_name and #{provider}=provider;
+    </select>
+
+</mapper>

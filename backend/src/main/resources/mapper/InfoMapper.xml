@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.backend.mapper.InfoMapper">
+
+    <select id="getBaseInfo" resultType="com.demo.backend.pojo.User">
+        select * from users where id=#{userId};
+    </select>
+    <select id="getQuotas" resultType="com.demo.backend.pojo.Quotas">
+        select user_id,model_id,total_quota,used_quota ,model_name,provider from user_quotas,ai_models where user_id=#{userId} and user_quotas.model_id=ai_models.id
+    </select>
+</mapper>

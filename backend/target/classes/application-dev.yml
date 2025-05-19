@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://mysql:3306/demo?useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+  mapper-locations: classpath:/mapper/*.xml
