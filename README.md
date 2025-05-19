@@ -1,5 +1,3 @@
-# Docker 全栈项目部署指南
-
 本项目基于 **Vue2 + Spring Boot + MySQL** 构建，通过 Docker Compose 实现容器化部署，Nginx 提供反向代理和跨域解决方案。
 
 ---
