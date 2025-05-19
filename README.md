@@ -11,8 +11,8 @@
 ### 部署步骤
 ```bash
 # 克隆项目
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/dangguigihub/latexOptimizeByLLM.git
+cd latexOptimizeByLLM
 
 # 构建镜像（首次运行或代码更新时执行）
 docker compose build
