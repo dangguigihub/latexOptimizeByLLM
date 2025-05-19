@@ -39,7 +39,7 @@ CREATE TABLE `ai_models` (
 
 LOCK TABLES `ai_models` WRITE;
 /*!40000 ALTER TABLE `ai_models` DISABLE KEYS */;
-INSERT INTO `ai_models` VALUES (1,'DeepSeek-R1(7B)','OpenAI','https://api.openai.com/v1/chat/completions',1),(2,'Claude-3-opus','Anthropic','https://api.anthropic.com/v1/messages',1),(3,'Llama-3-8B','Meta','https://llama.meta.com/api/v1/inference',0),(4,'ERNIE-4.0','Baidu','https://aip.baidu.com/rpc/2.0/ai_custom',1),(5,'Gemini-1.5','Google','https://generativelanguage.googleapis.com/v1beta',1),(6,'GPT-4-turbo','Meta','https://baidu.com',1),(7,'GPT-4-turbo','Baidu','https://llama.meta.com/api/v1/inference',1);
+INSERT INTO `ai_models` VALUES (1,'DeepSeek-R1(7B)','HuoShan','https://api.openai.com/v1/chat/completions',1),(2,'Claude-3-opus','Anthropic','https://api.anthropic.com/v1/messages',1),(3,'Llama-3-8B','Meta','https://llama.meta.com/api/v1/inference',0),(4,'ERNIE-4.0','Baidu','https://aip.baidu.com/rpc/2.0/ai_custom',1),(5,'Gemini-1.5','Google','https://generativelanguage.googleapis.com/v1beta',1),(6,'GPT-4-turbo','Meta','https://baidu.com',1),(7,'GPT-4-turbo','Baidu','https://llama.meta.com/api/v1/inference',1);
 /*!40000 ALTER TABLE `ai_models` ENABLE KEYS */;
 UNLOCK TABLES;
 
